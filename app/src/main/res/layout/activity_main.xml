@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--采用线性布局-->
+<!--<LinearLayout-->
+<!--android:layout_width="fill_parent"-->
+<!--android:layout_height="fill_parent"-->
+<!--android:orientation="vertical"-->
+<!--android:background="@color/whiteColor"-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--&lt;!&ndash;添加第一个按钮&ndash;&gt;-->
+<!--<Button-->
+<!--android:layout_width="200sp"-->
+<!--android:layout_height="80sp"-->
+<!--android:layout_gravity="center_horizontal"-->
+<!--android:id="@+id/button1"-->
+<!--android:background="@color/greenColor"-->
+<!--android:text="第一页"-->
+<!--/>-->
+
+<!--&lt;!&ndash;添加第二个按钮&ndash;&gt;-->
+<!--<Button-->
+<!--android:layout_width="200sp"-->
+<!--android:layout_height="80sp"-->
+<!--android:layout_gravity="center_horizontal"-->
+<!--android:id="@+id/button2"-->
+<!--android:background="@color/yellowColor"-->
+<!--android:text="第二页"-->
+<!--/>-->
+
+<!--</LinearLayout>-->
+
+<!--采用相对布局-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:id="@+id/relativeLayout1"-->
+<!--android:layout_width="fill_parent"-->
+<!--android:layout_height="fill_parent"-->
+<!--android:background="@color/whiteColor">-->
+
+<!--&lt;!&ndash;添加第一个居中显示的文本视图 textView1&ndash;&gt;-->
+<!--<TextView-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:id="@+id/textView1"-->
+<!--android:text="发现Widget有新的版本，是否需要更新"-->
+<!--android:textSize="34px"-->
+<!--android:layout_centerInParent="true"-->
+<!--/>-->
+
+<!--&lt;!&ndash;添加一个在button2左侧显示的button1&ndash;&gt;-->
+<!--<Button-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:id="@+id/button1"-->
+<!--android:text="现在更新"-->
+<!--android:textSize="30px"-->
+<!--android:layout_below="@+id/textView1"-->
+<!--android:layout_toLeftOf="@+id/button2"-->
+<!--/>-->
+
+<!--<Button-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:id="@+id/button2"-->
+<!--android:text="以后再说"-->
+<!--android:textSize="30px"-->
+<!--android:layout_alignRight="@+id/textView1"-->
+<!--android:layout_below="@+id/textView1"-->
+<!--/>-->
+
+<!--</RelativeLayout>-->
+
+
+<!--范例1：使用表格布局和线性不布局实现分类工具栏-->
+<!--<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:id="@+id/tableLayout1"-->
+<!--android:layout_width="fill_parent"-->
+<!--android:layout_height="fill_parent"-->
+<!--android:background="@color/whiteColor"-->
+<!--android:padding="10px">-->
+
+<!--&lt;!&ndash;第一行&ndash;&gt;-->
+<!--<TableRow-->
+<!--android:id="@+id/tableRaw1"-->
+<!--android:layout_width="fill_parent"-->
+<!--android:layout_weight="1"-->
+<!--&gt;-->
+<!--&lt;!&ndash;在第一个表格中添加具体的内容&ndash;&gt;-->
+<!--&lt;!&ndash;首先添加两个水平方向的线性布局管理器&ndash;&gt;-->
+<!--<LinearLayout-->
+<!--android:id="@+id/linearLayout1"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="fill_parent"-->
+<!--android:layout_weight="1"-->
+<!--android:background="@color/yellowColor">-->
+
+<!--<TextView-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:id="@+id/textView1"-->
+<!--android:text="时间"-->
+<!--style="@style/AppTheme"-->
+<!--android:layout_gravity="center"-->
+<!--/>-->
+
+<!--</LinearLayout>-->
+
+<!--<LinearLayout-->
+<!--android:layout_height="match_parent"-->
+<!--android:id="@+id/linearLayout2"-->
+<!--android:layout_weight="1"-->
+<!--android:background="@color/colorPrimary"-->
+<!--android:padding="40px">-->
+
+<!--<ImageView-->
+<!--android:id="@+id/imageView1"-->
+<!--android:src="@color/colorAccent"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_weight="1"-->
+<!--/>-->
+
+<!--<ImageView-->
+<!--android:id="@+id/imageView2"-->
+<!--android:src="@color/greenColor"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_weight="1"-->
+<!--android:layout_marginLeft="50px"-->
+<!--/>-->
+
+<!--<ImageView-->
+<!--android:id="@+id/imageView3"-->
+<!--android:src="#999000"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_weight="1"-->
+<!--android:layout_marginLeft="50px"-->
+<!--/>-->
+
+<!--</LinearLayout>-->
+
+<!--</TableRow>-->
+
+<!--&lt;!&ndash;第二行&ndash;&gt;-->
+<!--<TableRow-->
+<!--android:id="@+id/tableRow2"-->
+<!--android:layout_width="fill_parent"-->
+<!--android:layout_weight="1">-->
+
+<!--<LinearLayout-->
+<!--android:id="@+id/linearLayout3"-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_weight="1"-->
+<!--android:background="#DDFFCC"-->
+<!--android:padding="40px">-->
+
+<!--<TextView-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent"-->
+<!--android:text="视图一"-->
+<!--android:layout_weight="1"-->
+<!--android:id="@+id/textView2"-->
+<!--android:background="#556677"/>-->
+
+<!--<TextView-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent"-->
+<!--android:text="你还好吗"-->
+<!--android:layout_weight="1"-->
+<!--android:id="@+id/textView3"-->
+<!--android:background="#889900"/>-->
+
+<!--<TextView-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent"-->
+<!--android:text="啦啦啦"-->
+<!--android:layout_weight="1"-->
+<!--android:id="@+id/textView4"-->
+<!--android:background="#002233"/>-->
+
+<!--</LinearLayout>-->
+
+<!--<LinearLayout-->
+<!--android:id="@+id/linearLayout4"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_weight="1">-->
+
+<!--<Button-->
+<!--android:id="@+id/button1"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="@color/greenColor"-->
+<!--android:text="按钮1"-->
+<!--android:layout_weight="1"/>-->
+
+
+<!--<Button-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="match_parent"-->
+<!--android:id="@+id/button2"-->
+<!--android:background="#334455"-->
+<!--android:text="button2"-->
+<!--android:layout_weight="1"/>-->
+
+<!--</LinearLayout>-->
+
+<!--</TableRow>-->
+
+<!--&lt;!&ndash;第三行&ndash;&gt;-->
+<!--<TableRow-->
+<!--android:id="@+id/tableRow3"-->
+<!--android:layout_width="fill_parent"-->
+<!--android:layout_weight="1"-->
+<!--android:background="@color/redColor">-->
+
+<!--</TableRow>-->
+
+<!--</TableLayout>-->
+
+
+<!--范例2：布局一个游戏开始界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--添加顶部图片-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#445566"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="#007788">
+
+        <!--进入按钮-->
+        <Button
+            android:id="@+id/centerButton"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_centerInParent="true"
+            android:background="@color/greenColor"
+            android:text="进入"
+            android:textSize="40px"/>
+
+        <!--上方设置按钮-->
+        <Button
+            android:id="@+id/topButton"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_above="@+id/centerButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10px"
+            android:background="#456789"
+            android:text="设置"
+            android:textSize="35px"/>
+
+        <!--下方的退出按钮-->
+        <Button
+            android:id="@+id/bottomButton"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_below="@+id/centerButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            android:background="#124123"
+            android:text="退出"
+            android:textSize="35px"/>
+
+        <!--左边帮助按钮-->
+        <Button
+            android:id="@+id/leftButton"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_toLeftOf="@+id/centerButton"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:background="#168d45"
+            android:text="帮助"
+            android:textSize="35px"
+            />
+
+        <!--右边风云榜按钮-->
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_toRightOf="@id/centerButton"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:background="#999999"
+            android:text="风云榜"
+            android:textSize="35px"/>
+    </RelativeLayout>
+
+</LinearLayout>

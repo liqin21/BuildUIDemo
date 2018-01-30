@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.liqin.builduidemo.SecondActivity">
+
+    <!--添加文本框-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="50px"
+        android:text="这是一个文本输入框"
+        />
+
+    <!--添加一个编辑框-->
+    <EditText
+        android:layout_width="300px"
+        android:layout_height="60px"
+        android:background="@color/whiteColor"
+        android:id="@+id/passworldEditText"
+        />
+
+</android.support.constraint.ConstraintLayout>
