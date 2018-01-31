@@ -17,36 +17,42 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //为进入按钮添加点击事件
-        Button enterButton = (Button)findViewById(R.id.centerButton);
+        Button enterButton = (Button) findViewById(R.id.centerButton);
         enterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"进入游戏",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "进入游戏", Toast.LENGTH_SHORT).show();
             }
         });
 
         //为设置按钮添加点击事件
-        Button setButton = (Button)findViewById(R.id.topButton);
+        Button setButton = (Button) findViewById(R.id.topButton);
         setButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.v("提示","需要设置什么？");
+                Log.v("提示", "需要设置什么？");
                 //进入第一个界面
-                
+                Intent intent = new Intent(MainActivity.this, FirstPageActivity.class);
+                startActivity(intent);
             }
         });
 
         //为退出按钮添加点击事件
-        Button quitButton = (Button)findViewById(R.id.bottomButton);
+        Button quitButton = (Button) findViewById(R.id.bottomButton);
         quitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"确认退出？",Toast.LENGTH_LONG).show();
+//                Toast.makeText(MainActivity.this, "确认退出？", Toast.LENGTH_LONG).show();
+
+                //进入第二个界面
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+
             }
         });
 
         //给帮助按钮添加点击事件
-       Button assistButton = (Button)findViewById(R.id.leftButton);
+        Button assistButton = (Button) findViewById(R.id.leftButton);
         assistButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,11 +61,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //给风云榜按钮添加点击事件
-        Button sortButton = (Button)findViewById(R.id.rightButton);
+        Button sortButton = (Button) findViewById(R.id.rightButton);
         sortButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.v("风云榜","谁占据了你的封面？");
+                Log.v("风云榜", "谁占据了你的封面？");
             }
         });
 

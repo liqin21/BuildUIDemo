@@ -1,25 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.liqin.builduidemo.SecondActivity">
+<!--采用线性布局方式-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/LinearLayout1"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
-    <!--添加文本框-->
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="50px"
-        android:text="这是一个文本输入框"
-        />
+        android:background="#ADFF2F"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <!--添加三个textView，水平排列，平分屏幕宽度-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="视图一"
+                android:background="#778899"
+                android:layout_weight="1"/>
 
-    <!--添加一个编辑框-->
-    <EditText
-        android:layout_width="300px"
-        android:layout_height="60px"
-        android:background="@color/whiteColor"
-        android:id="@+id/passworldEditText"
-        />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="视图二"
+                android:background="@color/whiteColor"
+                android:layout_weight="1"/>
 
-</android.support.constraint.ConstraintLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="视图三"
+                android:background="@color/yellowColor"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#DDFFCC">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DA70D6"
+        android:layout_weight="1"
+        tools:ignore="Suspicious0dp">
+
+        <!--//添加一个视图，高度设置成1，作为分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="#FF0011"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
